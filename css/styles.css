@@ -144,8 +144,8 @@ img {
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
-    background-image: url(../images/Dark-bg.svg),
-     url(../images/people-office\ 1.svg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -211,9 +211,19 @@ img {
 
 .advantages-list-item {
     width: calc(( 100% - 72px ) / 4);
-
 }
 
+.advantages-svg {
+display: flex;
+margin: 0 auto;
+padding: 24px 100px;
+border: 1px solid #8e8f99;
+border-radius: 4px;
+width: 264px;
+height: 112px;
+background: #f4f4fd;
+margin-bottom: 8px;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -288,6 +298,17 @@ color: var(--NAVY-BLUE, #2E2F42);
         text-align: center;
     }
    
+
+    .svg-container {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .icons-team {
+        fill: #FFF;
+        background-color: #4d5ae5;
+    }
 
     /* Портфоліо */
     /* Четверта секція */
