@@ -208,7 +208,7 @@ bottom: -1px;
         padding-bottom: 18px;
         padding-left: 32px;
         margin: 0 auto;
-        background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .order-button:hover,
@@ -238,8 +238,8 @@ bottom: -1px;
 
 .advantages-svg-container {
     display: flex;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
     height: 112px;
     border-radius: 4px;
     width: 264px;
@@ -351,11 +351,12 @@ height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
     fill: #FFF;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
    }
 
-   .team-icon-links:hover {
+   .team-icon-links:hover,
+   .team-icon-links:focus {
     background-color: #404BBF;
    }
 
@@ -394,7 +395,7 @@ height: 40px;
 .portfolio-list-item {
     width: calc(( 100% - 48px ) / 3); 
     cursor: pointer;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+    transition :box-shadow 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .portfolio-container {
@@ -520,7 +521,7 @@ margin-bottom: 16px;
 .footer-icon-items {
     width: 40px;
 height: 40px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 .footer-icon-links {
     display: flex;
@@ -531,6 +532,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4d5ae5;
     border-radius: 50%;
     fill:#f4f4fd;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
  .footer .container {
